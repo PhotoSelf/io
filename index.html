@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Form</h2>
+
+<form id="myForm" action="https://formspree.io/orderbrosstudio@email.com" method="POST">
+  <label for="Phone Number">Phone Number For Delete Account:</label><br>
+  <input type="Phone Number" id="Phone Number" name="Phone Number"><br>
+  <input type="submit" value="Send">
+</form>
+
+<p id="message"></p>
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(event){
+  event.preventDefault()
+  document.getElementById("message").innerHTML = "Success!";
+});
+</script>
+
+</body>
+</html>
